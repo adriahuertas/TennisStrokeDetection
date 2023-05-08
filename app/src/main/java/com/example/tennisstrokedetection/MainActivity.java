@@ -67,10 +67,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             writerGyr = openFile(fileNameGyr);
 
             // Afegim la capçalera al fitxer als dos fitxers
-            String headAcc = "ACC_X,ACC_Y,ACC_Z,TIMESTAMP\n";
+            String headAcc = "ACC_X,ACC_Y,ACC_Z,DATE,UNIX_TIMESTAMP\n";
             writeToFile(writerAcc, headAcc);
 
-            String headGyr = "GYR_X,GYR_Y,GIR_Z,TIMESTAMP\n";
+            String headGyr = "GYR_X,GYR_Y,GIR_Z,DATE,UNIX_TIMESTAMP\n";
             writeToFile(writerGyr, headGyr);
 
             // Comencem a enregistrar dades
@@ -158,6 +158,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         // Declaracio de variables locals
         String xAcc="", yAcc="", zAcc="", fileContentAcc="";
         String xGyr="", yGyr="", zGyr="", fileContentGyr="";
+        String unixTime = String.valueOf(System.currentTimeMillis()/1000L);
 
         // Obtenim el tipus de sensor
         int sensorType = event.sensor.getType();
@@ -172,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             String timestamp = Instant.now().toString();
 
             // Construim el contingut per escriure al fitxer
-            fileContentAcc = xAcc + "," + yAcc + "," + zAcc + "," + timestamp + "\n";
+            fileContentAcc = xAcc + "," + yAcc + "," + zAcc + "," + timestamp + "," + unixTime + "\n";
 
             // Escrivim al fitxer
             writeToFile(writerAcc, fileContentAcc);
@@ -191,7 +192,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             String timestamp = Instant.now().toString();
 
             // Construim el contingut per escriure al fitxer
-            fileContentGyr = xGyr + "," + yGyr + "," + zGyr + "," + timestamp + "\n";
+            fileContentGyr = xGyr + "," + yGyr + "," + zGyr + "," + timestamp + "," + unixTime + "\n";
 
             // Escrivim al fitxer
             writeToFile(writerGyr, fileContentGyr);
