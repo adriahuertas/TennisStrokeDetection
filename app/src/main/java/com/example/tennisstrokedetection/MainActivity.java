@@ -75,8 +75,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
             // Comencem a enregistrar dades
             // Activem els sensors
-            mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
-            mSensorManager.registerListener(this, mGyroscope, SensorManager.SENSOR_DELAY_NORMAL);
+            mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_GAME);
+            mSensorManager.registerListener(this, mGyroscope, SensorManager.SENSOR_DELAY_GAME);
 
 
             // Mostrem missatge de feedback
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         // Declaracio de variables locals
         String xAcc="", yAcc="", zAcc="", fileContentAcc="";
         String xGyr="", yGyr="", zGyr="", fileContentGyr="";
-        String unixTime = String.valueOf(System.currentTimeMillis()/1000L);
+        String unixTime = String.valueOf(System.currentTimeMillis());
 
         // Obtenim el tipus de sensor
         int sensorType = event.sensor.getType();
