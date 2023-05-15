@@ -165,9 +165,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         if (sensorType == Sensor.TYPE_LINEAR_ACCELERATION) {
             // Obtenim els valors dels tres eixos
-            xAcc = String.valueOf(event.values[0]);
-            yAcc = String.valueOf(event.values[1]);
-            zAcc = String.valueOf(event.values[2]);
+            xAcc = String.valueOf((double)event.values[0]);
+            yAcc = String.valueOf((double)event.values[1]);
+            zAcc = String.valueOf((double)event.values[2]);
 
             // Obtenim timestamp
             String timestamp = Instant.now().toString();
@@ -184,9 +184,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         } else if (sensorType == Sensor.TYPE_GYROSCOPE) {
             // Obtenim els tres valors del giroscopi
-            xGyr = String.valueOf(event.values[0]);
-            yGyr = String.valueOf(event.values[1]);
-            zGyr = String.valueOf(event.values[2]);
+            xGyr = String.valueOf((double)event.values[0]);
+            yGyr = String.valueOf((double)event.values[1]);
+            zGyr = String.valueOf((double)event.values[2]);
 
             // Obtenim timestamp
             String timestamp = Instant.now().toString();
