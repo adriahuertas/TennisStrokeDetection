@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             String headAcc = "ACC_X,ACC_Y,ACC_Z,DATE,UNIX_TIMESTAMP\n";
             writeToFile(writerAcc, headAcc);
 
-            String headGyr = "GYR_X,GYR_Y,GIR_Z,DATE,UNIX_TIMESTAMP\n";
+            String headGyr = "GYR_X,GYR_Y,GYR_Z,DATE,UNIX_TIMESTAMP\n";
             writeToFile(writerGyr, headGyr);
 
             // Comencem a enregistrar dades
