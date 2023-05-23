@@ -1,0 +1,7 @@
+com.example.tennisstrokedetection.test.app-annotation-experimental-1.3.0-0 /home/adria/.gradle/caches/transforms-3/9d8d7feb3580355ffff343143a4678dc/transformed/annotation-experimental-1.3.0/res
+com.example.tennisstrokedetection.test.app-core-1.5.0-1 /home/adria/.gradle/caches/transforms-3/cd423349e9fa80d0989033f52c5735f3/transformed/core-1.5.0/res
+com.example.tennisstrokedetection.test.app-androidTest-2 /home/adria/AndroidStudioProjects/TennisStrokeDetection/app/build/generated/res/resValues/androidTest/debug
+com.example.tennisstrokedetection.test.app-androidTest-3 /home/adria/AndroidStudioProjects/TennisStrokeDetection/app/build/generated/res/rs/androidTest/debug
+com.example.tennisstrokedetection.test.app-mergeDebugAndroidTestResources-4 /home/adria/AndroidStudioProjects/TennisStrokeDetection/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.tennisstrokedetection.test.app-mergeDebugAndroidTestResources-5 /home/adria/AndroidStudioProjects/TennisStrokeDetection/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.tennisstrokedetection.test.app-merged_res-6 /home/adria/AndroidStudioProjects/TennisStrokeDetection/app/build/intermediates/merged_res/debugAndroidTest
